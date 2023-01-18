@@ -16,8 +16,20 @@ public class Patient {
 
 	public Patient(String name, int age) {
 		// TODO validate Input
-		this.name = name;
-		this.age = age;
+
+		if (name == null || name.isEmpty()) {
+			throw new IllegalArgumentException("Name muss mindestens ein Zeichen erhalten");
+		}
+		else {
+			this.name = name;
+		}
+
+		if (age < 0) {
+			throw new IllegalArgumentException("Name darf nicht negativ sein");
+		}
+		else {
+			this.age = age;
+		}
 		id = counter;
 
 		list = new AppointmentService();
@@ -32,6 +44,10 @@ public class Patient {
 	 */
 	public boolean addAppointment(LocalDateTime s, LocalDateTime e) {
 		// TODO validate parameters
+
+		if (e.isBefore(s)) {
+			return false;
+		}
 		
 		list.add(new Appointment(s, e));
 		return (true);
