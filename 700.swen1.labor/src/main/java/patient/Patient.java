@@ -59,7 +59,10 @@ public class Patient {
 	 */
 	public int getAverageWaitingTime() {
 		// TODO calculate average waiting time
-		return(-1);
+		int duration = 0;
+
+		for (Appointment a : list.getAppointments())
+		return(duration/list.getAppointments().length);
 	}
 
 	/**
