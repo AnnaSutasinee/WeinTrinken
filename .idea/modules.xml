@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/700.swen1.labor/700.swen1.labor.iml" filepath="$PROJECT_DIR$/700.swen1.labor/700.swen1.labor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/swen.labor.mock.ws1920.iml" filepath="$PROJECT_DIR$/.idea/swen.labor.mock.ws1920.iml" />
+    </modules>
+  </component>
+</project>
