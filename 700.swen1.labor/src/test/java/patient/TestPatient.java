@@ -13,5 +13,21 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 public class TestPatient {
-	// TODO 
+	// TODO
+    @InjectMocks Patient p;
+
+   @Mock AppointmentService as;
+
+   @Before
+    public void setUp() {
+       Patient p = new Patient("Fred", 23);
+       MockitoAnnotations.openMocks(this);
+   }
+
+   @Test(timeout = 1000)
+    public void validID() {
+
+   }
+
+
 }
